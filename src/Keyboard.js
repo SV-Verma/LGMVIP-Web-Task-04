@@ -7,7 +7,7 @@ function Keyboard({ clickHandle, clearScreen, calculate }) {
       <div className="keys">
         <input type="button" value={"C"} onClick={clearScreen} className="keyC" />
         <input type="button" value={"<"} onClick={clickHandle} className="keyG" />
-        <input type="button" value={"%"} onClick={clickHandle} className="keyG" />
+        <input type="button" value={">"} onClick={clickHandle} className="keyG" />
         <input type="button" value={"/"} onClick={clickHandle} className="keyG" />
       </div>
       <div className="keys">

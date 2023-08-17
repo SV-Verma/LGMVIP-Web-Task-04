@@ -12,6 +12,7 @@ function Calc() {
   }
 
   const calculate = () => {
+    // eslint-disable-next-line no-eval
     setresult(eval(result).toString());
   }
 
@@ -26,7 +27,11 @@ function Calc() {
             readOnly />
 
         </div>
-        <Keyboard clickHandle={clickHandle} clearScreen={clearScreen} calculate={calculate} />
+        <Keyboard
+          clickHandle={clickHandle}
+          clearScreen={clearScreen}
+          calculate={calculate}
+        />
       </div>
     </div>
   )
